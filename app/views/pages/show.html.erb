@@ -1,0 +1,31 @@
+<%= link_to ("<< link back to pages",{:action => 'list'}, :class => 'back-link')%>
+
+<div class="pages">
+	<table summary="Page detail view">
+		<tr>
+			<th>Page Name </th>
+			<td><%= @page.name %></td>
+		</tr>
+		<tr>
+			<th>Page Position </th>
+			<td><%= @page.position %></td>
+		</tr>
+		<tr>
+			<th>Page Visible </th>
+			<td><%= @page.visible ? 'Yes' : 'No' %></td>
+		</tr>
+		<tr>
+			<th>Page Subject Id</th>
+			<td><%= @page.subject_id %></td>
+		</tr>
+		<tr>
+			<th>Page Created </th>
+			<td><%= @page.created_at %></td>
+		</tr>
+		<tr>
+			<th>Page Updated </th>
+			<td><%= @page.updated_at %></td>
+		</tr>
+
+	</table>
+</div>
